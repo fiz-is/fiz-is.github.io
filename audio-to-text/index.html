@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7f6f2">
+  <meta name="description" content="Convert audio or video to text in your browser. Free audio transcription with no sign up, no account and no file upload. MP3, WAV, M4A and supported video formats.">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Free Audio to Text Converter | No Sign Up</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2212%22%20fill%3D%22%23274d39%22%2F%3E%3Cg%20stroke%3D%22%23fff%22%20stroke-width%3D%225%22%20stroke-linecap%3D%22round%22%3E%3Cpath%20d%3D%22M14%2028v8M23%2020v24M32%2012v40M41%2020v24M50%2028v8%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E%0A">
+  <style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap');
+:root {--bg:#f7f6f2;--ink:#20221f;--muted:#696d66;--line:#d8d9d3;--accent:#274d39;--paper:#fff;--mono:'DM Mono',ui-monospace,monospace;--sans:'DM Sans',Arial,sans-serif}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);-webkit-font-smoothing:antialiased}button,select,textarea{font:inherit}.wrap{max-width:1150px;margin-inline:auto;padding-inline:35px}.topbar{height:90px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.identity{text-decoration:none;display:inline-flex;align-items:center;gap:12px;color:var(--ink);font-size:25px;font-weight:700;letter-spacing:-1.2px}.identity-light{font-weight:400;color:#868c82}.brand-dot{color:#bc793f}.brand-symbol{width:30px;height:30px;display:flex;align-items:center;justify-content:center;gap:3px}.brand-symbol i{display:block;width:3px;border-radius:2px;background:var(--accent)}.brand-symbol i:nth-child(1),.brand-symbol i:nth-child(5){height:10px}.brand-symbol i:nth-child(2),.brand-symbol i:nth-child(4){height:23px}.brand-symbol i:nth-child(3){height:31px}.header-note{font:500 11px var(--mono);text-transform:uppercase;letter-spacing:.035em;display:flex;align-items:center;gap:9px;color:var(--muted)}.green-dot{width:7px;height:7px;background:#5a8e5c;border-radius:50%}.hero{padding-top:72px;padding-bottom:84px}.eyebrow{font:500 11px var(--mono);letter-spacing:.14em;color:var(--accent);display:flex;gap:13px;align-items:center}.eyebrow-line{height:1px;width:24px;background:var(--accent)}h1,h2,h3,p{margin-top:0}h1{font-size:clamp(53px,7vw,91px);line-height:1.04;letter-spacing:-5.5px;font-weight:600;margin:26px 0 26px}h1 em,.details h2 em{font-style:normal;color:#737970}.hero-intro{font-size:18px;color:var(--muted);line-height:1.7;max-width:650px;margin:0 0 44px}.tool{background:var(--paper);border:1px solid #d4d8d1;box-shadow:0 5px 30px #17231a09}.dropzone{margin:20px 20px 0;border:1.5px dashed #aab9ab;background:#fafbf8;min-height:274px;padding:30px 24px;cursor:pointer;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;outline-offset:5px;transition:background .2s,border-color .2s}.dropzone:hover,.dropzone.dragover,.dropzone:focus-visible{background:#eef4ec;border-color:#568768}.upload-visual{width:64px;height:64px;border:1px solid #d0dbd0;border-radius:50%;display:flex;align-items:center;justify-content:center;background:white;color:var(--accent);margin-bottom:15px}.dropzone h2{font-size:23px;font-weight:600;letter-spacing:-.5px;margin:0 0 5px}.dropzone p{color:var(--muted);font-size:14px;margin:0}.text-action{color:#2e694a;text-decoration:underline;text-underline-offset:3px;font-weight:600}.formats{margin-top:23px;display:flex;gap:10px;font:500 11px var(--mono);color:#7a8076}.formats span{color:#bec1b9}.tool-controls{padding:22px 24px;display:flex;align-items:end;gap:22px}.tool-option{display:flex;flex-direction:column;gap:8px;min-width:235px}.tool-option label,.model-message span{font:500 10px var(--mono);color:#6c7368;letter-spacing:.045em;text-transform:uppercase}.tool-option select{appearance:none;color:var(--ink);font:500 13px var(--sans);border:1px solid var(--line);border-radius:3px;background:white url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%233e5342" stroke-width="2"%3E%3Cpath d="m6 9 6 6 6-6"/%3E%3C/svg%3E') no-repeat right 13px center;padding:12px 36px 12px 12px;height:45px;cursor:pointer}.tool-option select:focus{outline:2px solid #a5baa4}.model-message{min-width:auto;margin-right:auto}.model-message strong{font-size:13px;font-weight:500}.primary-button{border:0;border-radius:3px;background:var(--accent);color:white;font-weight:600;font-size:14px;padding:13px 19px;min-width:205px;height:45px;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:22px}.primary-button:hover:not(:disabled){background:#183b28}.primary-button:disabled{background:#9ca89b;cursor:not-allowed}.trustline{display:flex;gap:30px;align-items:center;flex-wrap:wrap;margin-top:22px;color:#6a7167;font-size:12px}.trustline span{display:inline-flex;gap:7px;align-items:center}.trustline svg{height:17px;width:17px;stroke:#4e7855}.work-status{border-top:1px solid var(--line);padding:21px 24px 19px}.status-row{display:flex;justify-content:space-between;align-items:center;font-size:13px}.status-row strong{font-weight:600}.status-row span{font:500 11px var(--mono);color:var(--muted)}.meter{height:5px;background:#e7ece6;margin:12px 0 9px}.meter span{display:block;width:0;height:100%;background:#3b7451;transition:width .2s}.work-status p{font-size:12px;margin:0;color:var(--muted)}.error-box{background:#fff1ea;color:#813c28;border-top:1px solid #f0cab8;padding:16px 24px;font-size:13px}.result{border-top:1px solid var(--line);padding:25px 24px}.result-head{display:flex;justify-content:space-between;gap:20px;align-items:center;margin-bottom:18px}.result-kicker{font:500 10px var(--mono);color:#4b7856;letter-spacing:.1em;margin-bottom:5px}.result-head h2{font-size:24px;letter-spacing:-1px;margin:0}.result-actions{display:flex;gap:8px}.result-actions button{background:white;border:1px solid #b9c2b7;border-radius:3px;padding:10px 14px;cursor:pointer;font-size:12px;font-weight:600}.result-actions button:hover{background:#eef4ec}.result textarea{display:block;resize:vertical;width:100%;border:1px solid var(--line);background:#fbfcfa;color:var(--ink);padding:18px;line-height:1.8;min-height:180px;font-size:15px}.result textarea:focus{outline:2px solid #a5baa4}.result-foot{display:flex;align-items:center;justify-content:space-between;font:11px var(--mono);color:var(--muted);margin-top:12px}.reset{background:none;border:0;color:var(--accent);font:600 11px var(--mono);cursor:pointer}.details{border-top:1px solid var(--line);padding-top:65px;padding-bottom:75px;display:grid;grid-template-columns:1fr 1.6fr;gap:70px}.details h2,.faq h2{font-size:42px;letter-spacing:-2px;line-height:1.15;margin:20px 0 0}.eyebrow.small{font-size:10px}.details-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;padding-top:20px}.detail-index{font:500 11px var(--mono);color:#617965}.details h3{font-size:15px;margin:14px 0 10px;letter-spacing:-.3px}.details p{font-size:13px;color:var(--muted);line-height:1.7}.faq{border-top:1px solid var(--line);padding-top:65px;padding-bottom:95px;display:grid;grid-template-columns:1fr 1.6fr;gap:70px}.faq-list details{border-bottom:1px solid var(--line);padding:17px 0}.faq-list details:first-child{border-top:1px solid var(--line)}.faq-list summary{font-weight:600;font-size:14px;cursor:pointer;list-style-position:outside}.faq-list p{font-size:13px;color:var(--muted);line-height:1.75;margin:12px 0 0}.footer{border-top:1px solid var(--line);padding-top:25px;padding-bottom:38px;display:flex;justify-content:space-between;color:var(--muted);font:11px var(--mono)}.visually-hidden{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}@media(max-width:860px){.details,.faq{grid-template-columns:1fr;gap:22px}.hero{padding-top:55px}.tool-controls{flex-wrap:wrap}.model-message{margin-right:0}.primary-button{margin-left:auto}}@media(max-width:600px){.wrap{padding-inline:19px}.topbar{height:68px}.identity{font-size:21px}.header-note{font-size:9px}.hero{padding-top:48px;padding-bottom:55px}h1{font-size:clamp(43px,10vw,57px);letter-spacing:-2.7px;margin:22px 0}.hero-intro{font-size:15px;line-height:1.6;margin-bottom:26px}.dropzone{margin:11px 11px 0;min-height:240px;padding:20px 10px}.dropzone h2{font-size:20px}.formats{font-size:9px;gap:6px}.tool-controls{padding:16px;display:grid;grid-template-columns:1fr 1fr;gap:18px 8px}.tool-option{min-width:0}.tool-option select{width:100%;font-size:12px}.model-message strong{font-size:12px}.primary-button{grid-column:span 2;width:100%}.trustline{gap:11px 20px}.details,.faq{padding-top:45px;padding-bottom:50px}.details h2,.faq h2{font-size:34px}.details-grid{grid-template-columns:1fr;gap:14px}.details-grid>div{border-bottom:1px solid var(--line);padding:8px 0}.result{padding:20px 15px}.result-head{align-items:flex-start;flex-direction:column}.result-actions{width:100%}.result-actions button{flex:1}.footer{display:block}.footer span{display:block;margin-bottom:9px}}
+
+</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"Free Audio to Text Converter","description":"Free audio to text converter that runs in your browser without an account or uploading files.","applicationCategory":"MultimediaApplication","operatingSystem":"Modern web browser","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
+  <script id="worker-code" type="text/plain">
+// Inference is performed entirely in the visitor's browser. This worker never uploads the audio.
+import { pipeline, env } from 'https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1';
+env.allowLocalModels = false;
+env.backends.onnx.wasm.numThreads = 1;
+let currentMode = null;
+let transcriber = null;
+
+function send(type,data={}) { postMessage({type,...data}); }
+async function load(mode){
+  if (transcriber && mode === currentMode) return transcriber;
+  const model = mode === 'english' ? 'onnx-community/whisper-tiny.en' : 'onnx-community/whisper-tiny';
+  let lastUpdate = 0;
+  const progress_callback = event => {
+    if(event.status !== 'progress') return;
+    const now=Date.now();if(now-lastUpdate<350)return;lastUpdate=now;
+    send('loading',{message:`Loading model: ${event.file || 'speech recognition weights'}`,progress:Number(event.progress)||0});
+  };
+  let next;
+  const gpuAvailable = Boolean(self.navigator?.gpu);
+  if (gpuAvailable) {
+    try {next=await pipeline('automatic-speech-recognition',model,{device:'webgpu',dtype:'fp32',progress_callback});}
+    catch(e) { console.warn('WebGPU unavailable; falling back to WebAssembly.',e); }
+  }
+  if (!next) next=await pipeline('automatic-speech-recognition',model,{device:'wasm',dtype:'q8',progress_callback});
+  currentMode=mode;transcriber=next;return next;
+}
+self.onmessage=async event=>{
+  if(event.data.type!=='transcribe')return;
+  try{
+    const model=await load(event.data.mode);
+    send('ready');
+    const audio=event.data.samples;
+    const chunkSize=16000*25;
+    const total=Math.ceil(audio.length/chunkSize);
+    const parts=[];
+    for(let i=0;i<total;i++){
+      const clip=audio.subarray(i*chunkSize,Math.min((i+1)*chunkSize,audio.length));
+      let energy=0;
+      for(let j=0;j<clip.length;j+=64) energy+=clip[j]*clip[j];
+      const rms=Math.sqrt(energy/Math.ceil(clip.length/64));
+      if(rms>0.003){
+        const output=await model(clip,{task:'transcribe',return_timestamps:false});
+        const value=typeof output==='string'?output:output.text;
+        if(value?.trim())parts.push(value.trim());
+      }
+      send('segment',{done:i+1,total});
+    }
+    send('done',{text:parts.join(' ').replace(/\s+/g,' ').trim()});
+  } catch(e){console.error(e);send('error',{message:`Could not transcribe this file: ${e?.message || 'unknown model error'}`});}
+};
+
+</script>
+<script type="module">
+const $ = (id) => document.getElementById(id);
+const fileInput = $('file-input'), drop = $('dropzone'), action = $('transcribe'), language = $('language');
+const status = $('work-status'), error = $('error-box'), result = $('result'), output = $('transcript');
+const maxBytes = 75 * 1024 * 1024, maxSeconds = 15 * 60;
+let selected = null, busy = false, worker = null;
+
+function showError(message) { error.hidden = false; error.textContent = message; }
+function clearError() { error.hidden = true; error.textContent = ''; }
+function updateStatus(title, detail, pct = null) {
+  status.hidden = false;
+  $('status-title').textContent = title;
+  $('status-detail').textContent = detail;
+  $('status-percent').textContent = pct === null ? '' : `${Math.round(pct)}%`;
+  $('meter-bar').style.width = pct === null ? '8%' : `${Math.max(2,Math.min(100,pct))}%`;
+}
+function fmtBytes(size) { return size >= 1024*1024 ? `${(size/1024/1024).toFixed(1)} MB` : `${Math.round(size/1024)} KB`; }
+function choose(file) {
+  if (busy || !file) return;
+  clearError();
+  if (file.size > maxBytes) return showError('That file is over the 75 MB limit. Please choose a smaller recording.');
+  if (file.size === 0) return showError('The selected file is empty.');
+  if (!(file.type.startsWith('audio/') || file.type.startsWith('video/') || /\.(mp3|m4a|wav|ogg|webm|mp4|flac|mpeg|mpga)$/i.test(file.name))) return showError('Choose an audio file or a supported MP4/WebM video.');
+  selected = file;
+  $('drop-title').textContent = file.name.length > 45 ? `${file.name.slice(0,39)}…` : file.name;
+  $('drop-description').textContent = `${fmtBytes(file.size)} · Click or drop a different file`;
+  drop.classList.add('has-file');
+  action.disabled = false;
+  result.hidden = true; status.hidden = true;
+}
+function reset() {
+  if (busy) return;
+  selected = null; fileInput.value = ''; result.hidden = true; status.hidden = true; clearError();
+  $('drop-title').textContent = 'Drop your file here';
+  $('drop-description').innerHTML = 'or <span class="text-action">choose a file</span> to get started';
+  drop.classList.remove('has-file'); action.disabled = true; output.value = '';
+  drop.focus();
+}
+drop.addEventListener('click', () => { if (!busy) fileInput.click(); });
+drop.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); if (!busy) fileInput.click(); }});
+fileInput.addEventListener('change', e => choose(e.target.files?.[0]));
+['dragenter','dragover'].forEach(name => drop.addEventListener(name,e => { e.preventDefault();if(!busy)drop.classList.add('dragover'); }));
+['dragleave','drop'].forEach(name => drop.addEventListener(name,e => {e.preventDefault();drop.classList.remove('dragover');}));
+drop.addEventListener('drop', e => choose(e.dataTransfer?.files?.[0]));
+$('reset').addEventListener('click', reset);
+const countWords = text => (text.trim().match(/\S+/g) || []).length;
+output.addEventListener('input', () => { $('word-count').textContent = `${countWords(output.value)} words`; });
+$('copy').addEventListener('click', async () => {
+  try { await navigator.clipboard.writeText(output.value); $('copy').textContent = 'Copied!';setTimeout(()=>{$('copy').textContent='Copy text'},1600); }
+  catch { output.focus();output.select();document.execCommand('copy');$('copy').textContent='Copied!';setTimeout(()=>{$('copy').textContent='Copy text'},1600); }
+});
+$('download').addEventListener('click', () => {
+  const blob = new Blob([output.value],{type:'text/plain;charset=utf-8'});
+  const link = document.createElement('a');link.href = URL.createObjectURL(blob);
+  const filename = (selected?.name || 'transcript').replace(/\.[^.]+$/, '').replace(/[^\w\-. ]+/g,'_');
+  link.download = `${filename}-transcript.txt`;document.body.append(link);link.click();link.remove();setTimeout(()=>URL.revokeObjectURL(link.href),3000);
+});
+async function decode(file) {
+  const arrayBuffer = await file.arrayBuffer();
+  const Audio = window.AudioContext || window.webkitAudioContext;
+  if (!Audio) throw Error('This browser does not support audio decoding. Try a current version of Chrome, Edge or Safari.');
+  const context = new Audio();
+  let decoded;
+  try { decoded = await context.decodeAudioData(arrayBuffer); } catch {
+    throw Error('Your browser cannot decode this file or its audio codec. Please convert it to MP3, WAV or M4A and try again.');
+  } finally { await context.close(); }
+  if (!Number.isFinite(decoded.duration) || decoded.duration <= 0) throw Error('Could not read audio duration.');
+  if (decoded.duration > maxSeconds) throw Error('This version supports recordings up to 15 minutes. Please split longer files into shorter parts.');
+  const offline = new OfflineAudioContext(1,Math.ceil(decoded.duration*16000),16000);
+  const source = offline.createBufferSource();source.buffer = decoded;source.connect(offline.destination);source.start(0);
+  const rendered = await offline.startRendering();
+  return { samples:rendered.getChannelData(0).slice(), duration:decoded.duration };
+}
+function getWorker() {
+  if (worker) return worker;
+  worker = new Worker(URL.createObjectURL(new Blob([document.getElementById('worker-code').textContent], {type:'text/javascript'})),{type:'module'});
+  worker.addEventListener('error', e => {
+    fail('The transcription engine could not start. Check your connection to the model provider and try a modern browser.');
+  });
+  worker.onmessage = e => {
+    const {type,done,total,text,message,progress} = e.data;
+    if(type === 'loading') updateStatus('Downloading speech model…', message || 'The AI model is saved in your browser cache for later use.',Math.max(2,Math.min(25,progress*0.25)));
+    if(type === 'ready') updateStatus('Transcribing your file…','Processing speech locally. Larger recordings take longer.',28);
+    if(type === 'segment') updateStatus('Transcribing your file…',`Processed ${done} of ${total} audio segments.`,28+done/total*72);
+    if(type === 'done') {
+      busy=false;action.disabled=false;action.textContent='Transcribe file →';drop.setAttribute('aria-disabled','false');
+      output.value = text.trim();$('word-count').textContent=`${countWords(output.value)} words`;
+      if (!output.value) {status.hidden=true;return showError('No clear speech was detected. Try a louder recording with less background noise.');}
+      updateStatus('Transcription complete','Your transcript is ready to edit, copy or download.',100);
+      result.hidden=false;result.scrollIntoView({behavior:'smooth',block:'nearest'});
+    }
+    if(type === 'error') fail(message || 'Transcription failed. Please try a different file.');
+  };
+  return worker;
+}
+function fail(message) {busy=false;action.disabled=!selected;action.textContent='Transcribe file →';drop.setAttribute('aria-disabled','false');status.hidden=true;showError(message);}
+action.addEventListener('click', async()=>{
+  if (!selected || busy) return;
+  busy=true;clearError();result.hidden=true;action.disabled=true;action.textContent='Working…';drop.setAttribute('aria-disabled','true');
+  updateStatus('Preparing audio…','Decoding and converting to 16 kHz mono locally.',4);
+  try {
+    const {samples,duration} = await decode(selected);
+    updateStatus('Loading speech model…',`Audio ready (${Math.round(duration)} seconds). Loading the transcription engine.`,8);
+    getWorker().postMessage({type:'transcribe',samples,mode:language.value},[samples.buffer]);
+  }catch(e){fail(e.message || 'Unable to read that file.');}
+});
+
+</script>
+</head>
+<body>
+<header class="topbar wrap">
+  <a class="identity" href="./" aria-label="Audio to Text home"><span class="brand-symbol" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span>audio<span class="identity-light">to</span>text<span class="brand-dot">.</span></span></a>
+  <div class="header-note"><span class="green-dot"></span> Free · No signup</div>
+</header>
+<main>
+  <section class="hero wrap" aria-labelledby="page-title">
+    <div class="eyebrow"><span class="eyebrow-line"></span> THE SIMPLE TRANSCRIPTION TOOL</div>
+    <h1 id="page-title">Audio to text.<br><em>Nothing in between.</em></h1>
+    <p class="hero-intro">Turn recordings into readable text. Drop an audio or video file, get your transcript, and copy or download it. No account. No paywall.</p>
+    <section class="tool" aria-label="Audio transcription tool">
+      <input id="file-input" type="file" accept="audio/*,video/mp4,video/webm,.mp3,.m4a,.wav,.ogg,.webm,.mp4,.mpeg,.mpga,.flac" hidden>
+      <div class="dropzone" id="dropzone" role="button" tabindex="0" aria-label="Choose an audio or video file to transcribe">
+        <div class="upload-visual" aria-hidden="true"><svg width="31" height="31" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 16V3m0 0L7 8m5-5 5 5"/><path d="M4 16v3a2 2 0 002 2h12a2 2 0 002-2v-3"/></svg></div>
+        <h2 id="drop-title">Drop your file here</h2>
+        <p id="drop-description">or <span class="text-action">choose a file</span> to get started</p>
+        <div class="formats">MP3 <span>·</span> WAV <span>·</span> M4A <span>·</span> OGG <span>·</span> MP4 <span>·</span> WEBM</div>
+      </div>
+      <div class="tool-controls">
+        <div class="tool-option"><label for="language">Transcription language</label><select id="language"><option value="english">English (faster)</option><option value="auto">Auto-detect language</option></select></div>
+        <div class="tool-option model-message"><span>PROCESSING</span><strong>On your device</strong></div>
+        <button class="primary-button" id="transcribe" type="button" disabled>Transcribe file <span aria-hidden="true">→</span></button>
+      </div>
+      <div class="work-status" id="work-status" hidden role="status" aria-live="polite"><div class="status-row"><strong id="status-title">Preparing audio…</strong><span id="status-percent"></span></div><div class="meter"><span id="meter-bar"></span></div><p id="status-detail">Your file is being processed on this device.</p></div>
+      <div class="error-box" id="error-box" hidden role="alert"></div>
+      <section class="result" id="result" hidden aria-label="Transcript result"><div class="result-head"><div><div class="result-kicker">YOUR TRANSCRIPT</div><h2>Ready to use.</h2></div><div class="result-actions"><button type="button" id="copy">Copy text</button><button type="button" id="download">Download .txt</button></div></div><label class="visually-hidden" for="transcript">Editable transcript</label><textarea id="transcript" rows="11" spellcheck="true"></textarea><div class="result-foot"><span id="word-count">0 words</span><button class="reset" type="button" id="reset">Start another transcription ↗</button></div></section>
+    </section>
+    <div class="trustline"><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M10 2l6 3v5c0 4-2.5 6.5-6 8-3.5-1.5-6-4-6-8V5l6-3zM7 10l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg> Files stay in your browser</span><span><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4 10l4 4 8-9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg> No account required</span><span>First use downloads an AI model</span></div>
+  </section>
+  <section class="details wrap"><div><div class="eyebrow small">WHAT IT DOES</div><h2>One job.<br><em>Done properly.</em></h2></div><div class="details-grid"><div><span class="detail-index">01 /</span><h3>Upload a recording</h3><p>Choose MP3, WAV, M4A, OGG, or a supported video file. No forms to fill out.</p></div><div><span class="detail-index">02 /</span><h3>Get the words</h3><p>Speech recognition runs locally in your browser. You can edit the transcript before saving it.</p></div><div><span class="detail-index">03 /</span><h3>Take it with you</h3><p>Copy the text or download a plain-text file. No login and no credit card.</p></div></div></section>
+  <section class="faq wrap"><div><div class="eyebrow small">GOOD TO KNOW</div><h2>Questions, answered.</h2></div><div class="faq-list"><details><summary>Is audio to text really free?</summary><p>Yes. This browser-based version is free, with no account or payment needed. The speech-recognition model downloads to your browser the first time you use it.</p></details><details><summary>Are my recordings uploaded?</summary><p>No. Files are decoded and transcribed on your device; this site does not upload your recording to a transcription server. The AI model itself is downloaded from Hugging Face on first use.</p></details><details><summary>What formats and lengths are supported?</summary><p>Common audio formats and browser-decodable MP4/WebM video are supported. The current version accepts files up to 75 MB and recordings up to 15 minutes. Browser codec support varies, particularly for video.</p></details><details><summary>How accurate is the transcription?</summary><p>Accuracy depends on recording quality, accents, background noise and the selected language. English mode is faster. Always review important transcripts, especially names and numbers. Some older devices may process slowly.</p></details></div></section>
+</main>
+<footer class="footer wrap"><span>Audio → text. That's it.</span><span>Free utility · On-device transcription</span></footer>
+</body>
+</html>
